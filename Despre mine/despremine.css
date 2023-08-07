@@ -1,0 +1,555 @@
+/* HEADER DESPRE MINE */
+
+.header-container {
+  background-color: #141e4c;
+  height: 50vh;
+  min-height: 550px;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-container h1 {
+  color: #eaeaea;
+  margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .despre-mine-titlu h1 {
+    font-size: 2rem;
+  }
+}
+
+/* CARD INFO SECTION  */
+
+.container-for-card {
+  margin-top: 0px;
+  padding: 55px 0px 0px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+}
+.card-frame {
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 25%;
+}
+
+.card-elements {
+  background-color: #eaeaea;
+  margin: 50px 0px 50px 0px;
+  padding-top: 80px;
+  padding-right: 4px;
+  padding-left: 4px;
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card-elements img {
+  margin-top: -150px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  /* filter: grayscale(100%); */
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.card-elements h3 {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: rgba(20, 30, 76, 0.9);
+  color: #fbb44c;
+  border-radius: 5px;
+  padding: 0.25rem;
+  margin-top: -25px;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+.card-elements h4 {
+  margin: 5px 0px;
+}
+
+p {
+  font-size: 0.875rem;
+  color: #2b2922;
+  padding: 5px;
+}
+
+/* Section : MEDIA Queries CARD INFO */
+
+@media (max-width: 992px) {
+  .card-frame {
+    width: calc(100% / 3);
+  }
+  .card-elements {
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 769px) {
+  .card-frame {
+    width: 40%;
+  }
+  .card-elements {
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 669px) {
+  .card-frame {
+    width: 50%;
+  }
+  .card-elements {
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 575px) {
+  .card-frame {
+    width: 60%;
+  }
+  .card-elements {
+    min-height: 230px;
+  }
+}
+
+@media (max-width: 350px) {
+  .card-frame {
+    width: 80%;
+  }
+  .card-elements {
+    min-height: 230px;
+  }
+}
+
+@media (max-width: 267px) {
+  .card-frame {
+    width: 95%;
+  }
+  .card-elements {
+    min-height: 230px;
+  }
+}
+
+/* SECTIUNEA CE STIU */
+
+.ce-stiu {
+  height: auto;
+}
+
+.card-ce-stiu {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card-ce-stiu h3 {
+  font-weight: 400;
+}
+
+.card-ce-stiu span {
+  font-size: 0.875rem;
+  color: #2b2922;
+  vertical-align: middle;
+}
+
+.card-ce-stiu hr {
+  border: 1px solid lightgrey;
+  width: auto;
+  margin: 2px 5px;
+}
+
+.card-ce-stiu img {
+  width: 150px;
+}
+
+.card-ce-stiu {
+  padding-bottom: 0.5rem;
+}
+
+.curs > h3,
+.nivel-invatare,
+.nivel {
+  padding: 1rem 0;
+}
+
+.logo_curs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curs {
+  padding: 1rem 0;
+  min-width: 290px;
+}
+
+.curs-info {
+  padding: 0 0 1rem 0;
+}
+
+.nivel {
+  padding: 0.25rem;
+  margin-left: 0.675rem;
+  border: 1px solid #fbb44c;
+  border-radius: 2px;
+}
+
+.titlu-sectiune {
+  text-align: center;
+  padding: 2rem 0;
+  color: #141e4c;
+}
+
+/* AICI INCEPE SECTIUNEA DE GRID-URI */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px auto);
+  grid-gap: 1rem;
+  padding-bottom: 3.25rem;
+}
+
+.grid-item {
+  display: grid;
+}
+
+/* MEDIA QUERY PENTRU GRID-URI */
+
+@media only screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cine-sunt-eu p {
+  /* text-align: center; */
+  padding-bottom: 2rem;
+}
+.cine-sunt-eu h4 {
+  /* text-align: center; */
+  padding-bottom: 2rem;
+  padding-left: 40px;
+}
+
+.cine-sunt-eu img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  /* height: auto; */
+}
+
+.img_frame {
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* CURSURI URMATE */
+
+.imagine-cursuri {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-cursuri {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.imagine-cursuri img {
+  width: 100px;
+  height: auto;
+  filter: grayscale(100%);
+  margin: 0.4rem 2.625rem 0.4rem;
+}
+
+.bar-chart .label {
+  color: #757575;
+  margin: -0.6em 0 88px 0;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.bar-chart {
+  background-image: url("axis.png");
+  background-repeat: repeat-x;
+  display: flex;
+}
+
+.bar-chart li.axis {
+  width: 10%;
+  border: 0;
+  border-right: #ddd solid 1px;
+  height: 100%; /* 450px */
+}
+
+.IT_School-logo img {
+  /* padding: 0; */
+  background-color: #141e4c;
+  width: 100px !important;
+  height: 40px !important;
+}
+
+.aqua {
+  border-color: #8dc5be;
+  background-color: #5fb2a8;
+  background-image: linear-gradient(#b0dbd6, #5fb2a8);
+  border-radius: 5px 5px 0px 0px;
+  height: 60% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.pink {
+  border-color: #ebc0b5;
+  background-color: #e1ae9e;
+  background-image: linear-gradient(#f4dcd6, #e1ae9e);
+  border-radius: 5px 5px 0px 0px;
+  height: 70% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.yellow {
+  border-color: #e7af30;
+  background-color: #dfae36;
+  background-image: linear-gradient(#efc563, #dfae36);
+  border-radius: 5px 5px 0px 0px;
+  height: 35% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.brown {
+  border-color: #dcb386;
+  background-color: #bc8e5b;
+  background-image: linear-gradient(#dcba83, #bc8e5b);
+  border-radius: 5px 5px 0px 0px;
+  height: 65% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.red {
+  border-color: #e14949;
+  background-color: #ca4544;
+  background-image: linear-gradient(#da6d6c, #ca4544);
+  border-radius: 5px 5px 0px 0px;
+  height: 27% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.curs-progres {
+  width: calc(90% / 5);
+  height: 475px; /* 450px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 30px;
+}
+
+.curs-progres p {
+  color: #fff;
+  text-shadow: 1px 1px 0px rgb(50, 50, 50);
+}
+
+.percent h5 {
+  font-size: larger;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgb(50, 50, 50);
+  margin: 0px;
+}
+
+.imagine-cursuri img:hover {
+  filter: grayscale(0%);
+}
+
+.container-cursuri-urmate hr {
+  margin: 0px;
+}
+
+hr {
+  max-width: 1200px;
+  min-width: 320px;
+}
+
+/* Section : MEDIA Queries CURSURI-URMATE */
+
+@media (max-width: 992px) {
+  .curs-progres {
+    padding: 0px 15px;
+  }
+  /* .curs-progres img {
+    width: 90%;
+  } */
+
+  /* padding: 0px 10px; */
+  .label p {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 807px) {
+  .curs-progres {
+    padding: 0px 5px;
+  }
+  .curs-progres img {
+    width: 90%;
+  }
+  .IT_School-logo img {
+    width: 90% !important;
+    height: 80% !important;
+  }
+  .curs-progres p {
+    font-size: 80%;
+  }
+  .label p {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 642px) {
+  .curs-progres {
+    padding: 0px 5px;
+  }
+  .curs-progres img {
+    width: 90%;
+  }
+  .IT_School-logo img {
+    width: 90% !important;
+    height: 80% !important;
+  }
+  .curs-progres p {
+    font-size: 70%;
+  }
+  .label p {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 575px) {
+  .curs-progres {
+    padding: 0px 5px;
+  }
+  .curs-progres img {
+    width: 90%;
+  }
+  .IT_School-logo img {
+    width: 90% !important;
+    height: 90% !important;
+  }
+
+  .curs-progres p {
+    font-size: 65%;
+  }
+  .label p {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .curs-progres {
+    padding: 0px 3px;
+  }
+  .curs-progres img {
+    width: 95%;
+  }
+
+  .curs-progres p {
+    font-size: 60%;
+  }
+  .IT_School-logo img {
+    width: 95% !important;
+    height: 95% !important;
+  }
+  .label p {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 410px) {
+  .curs-progres {
+    padding: 0px 3px;
+  }
+  .curs-progres img {
+    width: 95%;
+  }
+
+  .curs-progres p {
+    font-size: 50%;
+  }
+  .IT_School-logo img {
+    width: 95% !important;
+    height: 95% !important;
+  }
+  .label p {
+    font-size: 70%;
+  }
+}
+
+/* Section : Footer*/
+
+.footer-container {
+  background-color: #141e4c;
+}
+
+.footer-container p {
+  margin-bottom: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 16px 0;
+}

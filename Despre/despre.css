@@ -1,0 +1,134 @@
+.header-container {
+  background-color: #141e4c;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.traineri-titlu h1 {
+  color: #eaeaea;
+  padding-top: 80px;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+/* TRAINERS INFO SECTION  */
+
+.trainers-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-for-trainers {
+  margin-top: 0px;
+  padding: 55px 0px 0px 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1200px;
+}
+.trainer-frame {
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 25%;
+}
+
+.trainer-elements {
+  margin: 50px 0px 50px 0px;
+  padding-top: 80px;
+  padding-right: 4px;
+  padding-left: 4px;
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.trainer-elements img {
+  margin-top: -150px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  filter: grayscale(100%);
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.trainer-elements h3 {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: rgba(20, 30, 76, 0.9);
+  color: #fbb44c;
+  border-radius: 5px;
+  padding: 0.25rem;
+  margin-top: -25px;
+  margin-bottom: 1rem;
+  z-index: 30;
+}
+
+p {
+  font-size: 0.875rem;
+  color: #2b2922;
+  padding: 5px;
+}
+
+/* Section : Queries TRAINERS */
+
+@media (max-width: 768px) {
+  .traineri-titlu h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .trainer-frame {
+    width: calc(100% / 3);
+  }
+  .trainer-elements {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 769px) {
+  .trainer-frame {
+    width: 50%;
+  }
+  .trainer-elements {
+    min-height: 310px;
+  }
+}
+
+@media (max-width: 575px) {
+  .trainer-frame {
+    width: 100%;
+  }
+  .trainer-elements {
+    min-height: 230px;
+  }
+}
+
+/* Section #5 : Footer*/
+
+.footer-container {
+  background-color: #141e4c;
+}
+
+.footer-container p {
+  margin-bottom: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 16px 0;
+}

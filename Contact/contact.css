@@ -1,0 +1,144 @@
+.header-container {
+  background-color: #141e4c;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container h1 {
+  text-align: center;
+  color: #fff;
+}
+/* Contact-form */
+
+/* TITLE & SUB-TITLE */
+.contact-form-it-school h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.75rem;
+  padding-top: 1.75rem;
+  color: #101d42;
+}
+
+.main-info-contact {
+  margin-bottom: 1.75rem;
+  color: #2b2922;
+}
+
+.contact-form-it-school li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.5rem;
+  align-items: center;
+}
+
+.icon-x {
+  color: #101d42;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.contact-form-it-school ul {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.folder-contact-flex {
+  display: flex;
+  margin-bottom: 1.75rem;
+}
+
+.folder-contact-flex p {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.folder-contact-flex a {
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+.folder-contact-flex a:hover {
+  color: #101d42;
+}
+
+.time-location {
+  color: #8e8e8e;
+}
+
+.contact-form-flex {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 1rem;
+}
+
+.contact-form-flex label {
+  margin-bottom: 0.25rem;
+  color: #2b2922;
+  font-size: 0.875rem;
+}
+
+.contact-form-it-school input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.contact-form-it-school input:focus,
+.contact-form-it-school textarea:focus {
+  border-color: #8e8e8e;
+  outline: none;
+}
+
+form input::placeholder {
+  color: #8e8e8e;
+  font-size: 0.875rem;
+}
+
+.contact-form-flex textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contact-form-flex input[type="submit"] {
+  font-size: 0.875rem;
+  color: #fff;
+  background-color: #2bb686;
+  border: 1px solid #2bb686;
+  border-radius: 5px;
+  width: 100px;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .folder-contact-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form-flex {
+    width: 100%;
+    padding: 0;
+  }
+  .folder-contact-flex ul {
+    width: 100%;
+    padding: 0;
+  }
+  .contact-form-it-school li {
+    margin-bottom: 1rem;
+  }
+  .contact-form-it-school li:last-child {
+    margin-bottom: 1.75rem;
+  }
+}
